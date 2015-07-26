@@ -18,14 +18,7 @@ More details about it [on my blog](http://jefrey.ml/cood).
 * [Javascript](https://github.com/jesobreira/cood/blob/javascript-interpreter/cood.js)
 
 ## On-line interpreter
-
-
-
- Debug mode
-Run
- 
-
-
+Available [here](https://jesobreira.github.com/cood)
 
 ## Documentation
 
@@ -34,26 +27,28 @@ All your scripts will start with a "Hey, waiter!".
 Well... this is not mandatory, but it's cool :D
 
 Then you will have access to 65.535 data cells, starting in pointer 32.767, and will be able to use the following commands:
-Command	**Function**
-Hey, waiter!	Starts the script.
-The bill, please.	Ends the script.
-I want this.	Increases a byte on the current data pointer.
-I don't want this.	Decreases a byte on the current data pointer.
-What do you have for dessert?	Increments the data pointer (points to the next cell to the right).
-What do you have for tidbit?	Decrements the data pointer (points to the next cell in the left).
-May I ask something?	Reads STDIN (user input).
-I'm hungry.	Reads the current data pointer value, and adds a trailing line break.
-I'm very hungry.	Reads the current data pointer, without trailing line break.
-How much is it?	Reads the current data pointer as decimal value rather than ASCII.
-I hate this.	Zeroes the current data pointer.
-I want [number] of this.	Puts [number] value on the current data pointer.
-More [number] of this.	Adds [number] value to the current data pointer.
-Less [number] of this.	Decreases [number] value on the current data pointer.
-What do you suggest?	Starts a loop. Read below about loops.
-Nothing more?	Ends a loop. Read below about loops.
-Know a joke? [comment]	Way to comment out your code.
 
-***Note: some of my friends reported that, on Windows 8, when using "May I ask something?" with the AutoIt interpreter, it is needed to put the value and hit enter twice, so it works fine. As I dislike Windows and hate Windows 8, I can't confirm it. But it seems to be working fine on Windows 7. However, they also reported that the PHP interpreter, bamcompiled (so, an .exe file too) has no problem on reading STDIN stream.***
+| Command	| Function |
+|---------|----------|
+|Hey, waiter!|Starts the script.|
+|The bill, please.|Ends the script.|
+|I want this.|Increases a byte on the current data pointer.|
+|I don't want this.|Decreases a byte on the current data pointer.|
+|What do you have for dessert?|Increments the data pointer (points to the next cell to the right).|
+|What do you have for tidbit?|Decrements the data pointer (points to the next cell in the left).|
+|May I ask something?|Reads STDIN (user input).|
+|I'm hungry.|Reads the current data pointer value, and adds a trailing line break.|
+|I'm very hungry.|Reads the current data pointer, without trailing line break.|
+|How much is it?|Reads the current data pointer as decimal value rather than ASCII.|
+|I hate this.|Zeroes the current data pointer.|
+|I want [number] of this.|Puts [number] value on the current data pointer.|
+|More [number] of this.|Adds [number] value to the current data pointer.|
+|Less [number] of this.|Decreases [number] value on the current data pointer.|
+|What do you suggest?|Starts a loop. Read below about loops.|
+|Nothing more?|Ends a loop. Read below about loops.|
+|Know a joke? [comment]|Way to comment out your code.|
+
+*Note: some of my friends reported that, on Windows 8, when using "May I ask something?" with the AutoIt interpreter, it is needed to put the value and hit enter twice, so it works fine. As I dislike Windows and hate Windows 8, I can't confirm it. But it seems to be working fine on Windows 7. However, they also reported that the PHP interpreter, bamcompiled (so, an .exe file too) has no problem on reading STDIN stream.*
 
 #### Loops
 
