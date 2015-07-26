@@ -18,7 +18,7 @@ More details about it [on my blog](http://jefrey.ml/cood).
 * [Javascript](https://github.com/jesobreira/cood/blob/javascript-interpreter/cood.js)
 
 ## On-line interpreter
-Available [here](https://jesobreira.github.com/cood)
+Available [here](https://jesobreira.github.io/cood)
 
 ## Documentation
 
