@@ -31,9 +31,10 @@ for($i = 0; $i<=$j; $i++) {
 	if(wildcard("I don*t want this*", $l)) $cells[$pointer] -= 1;
 	if(wildcard("What do you have for dessert*", $l)) $pointer += 1;
 	if(wildcard("What do you have for tidbit*", $l)) $pointer -= 1;
-	if(wildcard("May I ask something*", $l)) $cells[$pointer] = gets();
+	if(wildcard("May I ask something*", $l)) $cells[$pointer] = ((int)gets());
 	if(wildcard("I*m hungry*", $l)) printf("%c\n", $cells[$pointer]);
 	if(wildcard("I*m very hungry*", $l)) printf("%c", $cells[$pointer]);
+	if(wildcard("How much is it*", $l)) printf("%d", $cells[$pointer]);
 	if(wildcard("I hate this*", $l)) $cells[$pointer] = 0;
 	
 	// get number
