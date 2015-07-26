@@ -30,9 +30,10 @@ function cood(c, callback, debug) {
 		if(wildcard("I don*t want this*", l)) cells[pointer] -= 1;
 		if(wildcard("What do you have for dessert*", l)) pointer += 1;
 		if(wildcard("What do you have for tidbit*", l)) pointer -= 1;
-		if(wildcard("May I ask something*", l)) cells[pointer] = prompt("");
+		if(wildcard("May I ask something*", l)) cells[pointer] = parseInt(prompt(""));
 		if(wildcard("I*m hungry*", l)) callback(String.fromCharCode(cells[pointer]) + "\n");
 		if(wildcard("I*m very hungry*", l)) callback(String.fromCharCode(cells[pointer]));
+		if(wildcard("How much is it*", l)) callback(cells[pointer]);
 		if(wildcard("I hate this*", l)) cells[pointer] = 0;
 		
 		// get number
