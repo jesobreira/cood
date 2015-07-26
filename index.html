@@ -7,19 +7,19 @@
 <script type="text/javascript">
 	window.onload = function() {
 		document.getElementById('run').onclick = function() {
-			document.getElementById('result').value = "";
+			document.getElementById('result').innerText = "";
 			cood(document.getElementById('code').value, function(content) {
-				document.getElementById('result').value += content;
+				document.getElementById('result').innerText += content;
 			}, document.getElementById('debug').checked);
 		}
 	}
 </script>
 </head>
 <body>
-<textarea id="code" rows="5" cols="25" placeholder="Write code here"></textarea>
+<textarea id="code" rows="5" cols="25" style="width: 100%" placeholder="Write code here"></textarea>
 <br/>
 <label for="debug"><input id="debug" type="checkbox" /> Debug mode</label><br/>
 <button id="run">Run</button>
 <br/>
-<textarea readonly rows="5" cols="25" id="result"></textarea>
+<div id="result">&nbsp;</div>
 </body>
