@@ -51,9 +51,10 @@ For $i = 0 To $j
 	If wildcard("I don*t want this*", $l) Then $cells[$pointer] -= 1
 	If wildcard("What do you have for dessert*", $l) Then $pointer += 1
 	If wildcard("What do you have for tidbit*", $l) Then $pointer -= 1
-	If wildcard("May I ask something*", $l) Then $cells[$pointer] = gets()
+	If wildcard("May I ask something*", $l) Then $cells[$pointer] = Int(gets())
 	If wildcard("I*m hungry*", $l) Then ConsoleWrite(Chr($cells[$pointer]) & @CRLF)
 	If wildcard("I*m very hungry*", $l) Then ConsoleWrite(Chr($cells[$pointer]))
+	If wildcard("How much is it*", $l) Then ConsoleWrite($cells[$pointer])
 	If wildcard("I hate this*", $l) Then $cells[$pointer] = 0
 
 	; get number
